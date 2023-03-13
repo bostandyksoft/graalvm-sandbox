@@ -30,9 +30,10 @@ public class Main {
 								.allowListAccess(true)
 								.build()
 				).
-				option("inspect", "4242").
+				option("inspect", "0.0.0.0:4242").
+				option("inspect.Secure", "false").
 				option("inspect.Path", "test").
-				option("inspect.Suspend", Boolean.toString(suspend));
+				option("inspect.WaitAttached", Boolean.toString(suspend));
 
 		System.out.println("devtools://devtools/bundled/js_app.html?ws=127.0.0.1:4242/test");
 
