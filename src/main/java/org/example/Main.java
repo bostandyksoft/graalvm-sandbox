@@ -36,6 +36,7 @@ public class Main {
 				option("inspect.WaitAttached", Boolean.toString(suspend));
 
 		System.out.println("devtools://devtools/bundled/js_app.html?ws=127.0.0.1:4242/test");
+		System.out.println("devtools://devtools/bundled/js_app.html?ws=127.0.0.1:4242/test");
 
 		try (Context context = builder.build()) {
 			Value value = context.eval(
